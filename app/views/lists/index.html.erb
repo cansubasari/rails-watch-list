@@ -1,0 +1,9 @@
+<h1 class= "text-info"><strong>📃My Watch List📃</strong></h1>
+
+<ul>
+<% @lists.each do |list| %>
+  <li><%= link_to list.name, list_path(list) %></li>
+<% end %>
+</ul>
+
+<%= link_to "➕Create New List", new_list_path, class: "btn btn-outline-success mb-3"%>
