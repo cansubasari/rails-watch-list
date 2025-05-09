@@ -1,6 +1,6 @@
 <h1 ><strong>📽️New List📽️</strong></h1>
 
-<%= simple_form_for @list do |f| %>
+<%= simple_form_for @list,  html: { multipart: true } do |f| %>
   <%= f.input :name %>
   <%= f.button :submit, "Create List", class: "btn btn-outline-warning" %>
   <%= f.input :photo, as: :file, label: "Upload a photo⬇️" %>
