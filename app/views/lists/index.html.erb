@@ -1,8 +1,8 @@
-<h1 class= "text-info"><strong>📃My Watch List📃</strong></h1>
+<h1 class= "watch-list-heading"><strong>📽️My Watch List📽️</strong></h1>
 
-<ul>
+<ul class="list-group">
 <% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list) %></li>
+  <li class="list-item"><%= link_to list.name, list_path(list), class: "list-link" %></li>
 <% end %>
 </ul>
 
